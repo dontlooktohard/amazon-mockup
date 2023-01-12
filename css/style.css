@@ -1,0 +1,209 @@
+/* reset */
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* layout */
+
+ol, ul {
+	list-style: none;
+}
+
+/* navbar */
+#navbar .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* position: relative; */
+   margin-top: 0;
+   margin-left: 0;
+   padding: 0.5rem;
+   background-color: #333;
+   width: 100%;
+   font-size: 14px;
+   z-index: 5;
+   height: 60px;
+   min-width: 1000px;
+   
+}
+#navbar .container .nav-left{
+    display: flex;
+    position: static;
+    float: none;
+    align-items: center;
+    justify-content: start;
+}
+   
+#navbar .nav-left .logo{
+    position: relative;
+    float: none;
+    flex-shrink: 0;
+    text-decoration: none;
+    padding: 1px 8px 0 6px;
+    margin: 1px;
+}
+#navbar .logo a{
+background: url('../assets/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png') no-repeat -20px -180px;
+width: 152px;
+ height: 46px;
+ display: flex; 
+}
+#navbar .nav-left .logo:hover{
+    border: 1px solid #fff;
+}
+#navbar .logo2{
+    display: flex;
+    position: relative;
+    font-family: inherit;
+    text-decoration: none;
+    cursor: pointer; 
+    height:60px;
+    width: 90.64px;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar .logo2 p{
+    color: rgb(186, 185, 185);
+}
+#navbar .logo2 p span{
+    color: #fff;
+}
+#navbar .logo2 i{
+    margin-top: 8px;
+    color: #fff;
+    padding: 0px 0px 3px 0px;
+}
+#navbar .nav-left .logo2:hover{
+    border: 1px solid #fff;
+}
+/* nav-center */
+#navbar .nav-center{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    display: flex; 
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5%;
+    width: 600px;
+    max-width: 800px;
+    height: 40px;
+    padding: 10px 4px 10px 3px;
+}
+#navbar .nav-center i{
+    background-color:#FF9900 ;
+}
+#navbar .nav-center .search{
+    height: 21px;
+    width: 100%;
+    display: flex;
+    float: none;
+    line-height: 15px;
+}
+#navbar .nav-center .glass{
+    background: url('../assets/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png') no-repeat -10px -290px;
+	background-size: 350px 450px;
+	width: 30px;
+	height: 21px;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    background-color: #FF9900 ;
+}
+
+/* nav-right */
+#navbar .nav-right{
+    display: flex;
+    position: static;
+    float: none;
+    align-items: center;
+    justify-content: center;
+}
+#navbar .nav-right a{
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    float: none;
+    padding: 4px;
+ 
+}
+#navbar .nav-right a .cart{
+    background: url('../assets/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png') no-repeat -10px -340px;
+    background-size: 350px 450px;
+    width: 38px;
+    height: 26px;
+    padding: 0px 9px 11 9px;
+    margin-right: 11px;
+}
+#navbar .nav-right .cart:hover{
+    border: 1px solid #fff;
+}
+#navbar .nav-right .sign-in{
+    display: flex;
+    flex-shrink: 0;
+    height: 100%;
+    width: 40px;
+}
+#navbar .nav-right .returns{
+    display: flex;
+    flex-shrink: 0;
+    height: 100%;
+    width: 40px;
+}
+
+#navbar.nav-right.en{
+    display: flex;
+    flex-shrink: 0;
+    height: 100%;
+    width: 40px;
+}
+
+#navbar .nav-right .en .flag{
+    background: url('../assets/images/flag.png') no-repeat;
+}
+#navbar.nav-right.en:hover{
+    border: 1px solid #fff;
+}
+
+
+
+       /*    Nav row  */
+#nav-row{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    position: static;
+    float: none;
+    padding: 0 0 0 11px;
+    margin: 0;
+    background-color: #232F3E;
+    height: 20px;
+    width: 1000px;
+    display: block;
+}
+
+#nav-row.nav-left{
+    justify-content: flex-end;
+    position: relative;
+    border:  solid 2px rgb(0, 0, 0);
+}
+    
