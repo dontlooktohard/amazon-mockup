@@ -231,11 +231,10 @@ width: 152px;
 /* mine body */
 .containerBox{
     display: flex;
-    align-items: center;
-    margin-top: 15vh; 
+    margin-top: 15vh;
+    margin-right: 5vh; 
+    margin-left: 5vh;
     display: grid;
-
-        display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 0px;
@@ -252,7 +251,7 @@ width: 152px;
     grid-area: 1 / 1 / 4 / 4; 
     
         display: grid;
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
@@ -262,29 +261,32 @@ width: 152px;
 
     }
     .containerBox.img-box.box1{
-        grid-area: 6 / 2 / 7 / 3; 
+        grid-column: 1/1;
+        grid-row: 6/6; 
     }
     .containerBox.img-box.box2{
-        grid-area: 6 / 3 / 7 / 4;
+        grid-column: 2/2;
+        grid-row: 6/6;
     }
     .containerBox.img-box.box3{
-        grid-area: 6 / 4 / 7 / 5;
+        grid-column: 3/3;
+        grid-row: 6/6;
     }
     .containerBox.img-box.box4{
-        grid-area: 6 / 5 / 7 / 6;
+        grid-column: 4/4;
+        grid-row: 6/6;
     }
     .containerBox.img-box.box5{
-        grid-area: 6 / 6 / 7 / 7;
+        grid-column: 5/5;
+        grid-row: 6/6;
     }
     .containerBox.img-box.box6{
-        grid-area: 6 / 7 / 7 / 8;
+        grid-column: 6/6;
+        grid-row: 6/6;
     }
 .containerBox .img-box.mine-box{
-    border: 1px solid black;
-    height: 50vh;
-    width: 50vh;
-    margin:  auto;
-    grid-area: 1 / 1 / 6 / 8;
+    grid-column: 1/5;
+        grid-row: 1/6;
 }
 .containerBox .img-box.img-block{
     display: block;
@@ -293,6 +295,11 @@ width: 152px;
     margin: 0 auto;
     height: 100%;
     width: 100%;
+}
+
+.containerBox.details-box{
+    border: 2px solid #232f3e;
+    border-radius: 5%;
 }
 /* adjusting */
 img{
